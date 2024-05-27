@@ -10,7 +10,7 @@ const Product = ({ data, MoveY, val }) => {
   return (
     <div
       onMouseEnter={() => change(val)}
-      className="w-full flex items-center flex-col lg:flex-row mb-20 lg:mb-0 p-2 text-center lg:p-0 lg:text-left justify-between h-[250px] font-[gilroy]"
+      className="w-full flex items-center flex-col lg:flex-row mb-20 lg:mb-0 p-2 text-center lg:p-0 lg:text-left justify-center lg:justify-between h-[250px] font-[gilroy]"
     >
       <div className="basis-8/12">
         <h1 className="title text-5xl">{title}</h1>

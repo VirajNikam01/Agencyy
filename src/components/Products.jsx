@@ -38,7 +38,7 @@ const Products = () => {
   };
 
   return (
-    <div className="relative max-w-screen-xl mx-auto my-24">
+    <div className="relative max-w-screen-xl mx-auto sm:my-24 mt-20">
       {ProductsData.map((elem, index) => (
         <Product key={index} data={elem} MoveY={setYposition} val={index} />
       ))}
@@ -46,33 +46,73 @@ const Products = () => {
       <motion.div
         initial={{ y: Yposition, x: `-50%` }}
         animate={{ y: Yposition }}
-        className="absolute top-0 left-[45%] bg-green-50  lg:w-[26rem]  lg:h-[15rem] -translate-x-[50%] translate-y-[50%]  overflow-hidden"
+        className="absolute top-0 left-[45%] w-[0px]  lg:w-[26rem] h-[0px]  lg:h-[15rem] -translate-x-[50%] translate-y-[50%]  overflow-hidden"
       >
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{ y: -Yposition }}
           className="bg-sky-100 h-full w-full border"
-        ></motion.div>
+        >
+          <video
+            src="../../Videos/weglotlikemagic.webm"
+            type="video/mp4"
+            muted
+            loop
+            autoPlay
+          ></video>
+        </motion.div>
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{ y: -Yposition }}
           className="bg-sky-200 h-full w-full border"
-        ></motion.div>
+        >
+          <video
+            src="../../Videos/Arqitel project video 4_3.webm"
+            type="video/mp4"
+            muted
+            loop
+            autoPlay
+          ></video>
+        </motion.div>
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{ y: -Yposition }}
           className="bg-sky-300 h-full w-full border"
-        ></motion.div>
+        >
+          <video
+            src="../../Videos/TTR project video 4_3_H.264.webm"
+            type="video/mp4"
+            muted
+            loop
+            autoPlay
+          ></video>
+        </motion.div>
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{ y: -Yposition }}
           className="bg-sky-400 h-full w-full border"
-        ></motion.div>
+        >
+          <video
+            src="../../Videos/Cula_promo_new_4_3.mp4"
+            type="video/mp4"
+            muted
+            loop
+            autoPlay
+          ></video>
+        </motion.div>
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{ y: -Yposition }}
           className="bg-sky-500 h-full w-full border"
-        ></motion.div>
+        >
+          <video
+            src="../../Videos/jungle-4-3-.webm"
+            type="video/mp4"
+            muted
+            loop
+            autoPlay
+          ></video>
+        </motion.div>
       </motion.div>
     </div>
   );

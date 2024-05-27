@@ -53,7 +53,7 @@ const Work = () => {
       case 0:
         showImages([]);
         break;
-      case 3:
+      case 2:
         showImages([0]);
         break;
       case 7:
@@ -73,7 +73,7 @@ const Work = () => {
 
   return (
     <div className=" w-full">
-      <div className="max-h-fit max-w-screen-xl mx-auto sm:py-14 px-3 relative w-full ">
+      <div className="max-h-fit max-w-screen-xl mx-auto py-5 sm:py-14 px-3 relative w-full ">
         <h1 className="  leading-none tracking-tight text-[33vw] text-center font-bold font-[gilroy] ">
           Work
         </h1>
@@ -90,9 +90,10 @@ const Work = () => {
             return (
               elem.isActive && (
                 <img
+                  key={index}
                   src={elem.url}
                   alt=""
-                  className={`w-32 lg:w-72 absolute -translate-x-[50%] -translate-y-[50%]`}
+                  className={`w-40 lg:w-72 absolute -translate-x-[50%] -translate-y-[50%]`}
                   style={{ top: elem.top, left: elem.left }}
                 />
               )

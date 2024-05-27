@@ -14,6 +14,7 @@ const Navbar = () => {
           {["Home", "Work", "About", "News", "Career"].map((elem, index) => {
             return (
               <a
+                key={index}
                 href={elem.toLowerCase()}
                 className="mx-4 font-[gilroy] font-normal"
               >
