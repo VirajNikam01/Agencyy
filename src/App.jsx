@@ -1,5 +1,13 @@
 import React from "react";
-import { Navbar, Work, Stripes, Products, Marques } from "./components";
+import {
+  Navbar,
+  Work,
+  Stripes,
+  Products,
+  Marques,
+  Cards,
+  Footer,
+} from "./components";
 
 const App = () => {
   return (
@@ -9,6 +17,8 @@ const App = () => {
       <Stripes />
       <Products />
       <Marques />
+      <Cards />
+      <Footer />
     </div>
   );
 };
